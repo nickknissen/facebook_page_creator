@@ -3,3 +3,5 @@
 *.pyc
 .sass-cache
 .env
+facebook_page_creator.sublime-workspace
+node_modules
