@@ -4,7 +4,7 @@
 		{
 			"follow_symlinks": true,
 			"path": "/home/nkn/code/facebook_page_creator",
-			"folder_exclude_patterns": ["__pycache__", ".env"]
+			"folder_exclude_patterns": ["__pycache__", ".env", "node_modules"]
 		}
 	],
 	 
@@ -15,5 +15,7 @@
 	],
 	"trim_automatic_white_space": true,
 	"trim_trailing_white_space_on_save": true,
+	"tab_size": 4,
+	"translate_tabs_to_spaces": false
  
 }

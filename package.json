@@ -16,6 +16,7 @@
     "url": "https://github.com/cezor/facebook_page_creator/issues"
   },
   "dependencies": {
-    "grunt": "~0.4.1"
+    "grunt": "~0.4.1",
+    "grunt-contrib-watch": "~0.5.3"
   }
 }
