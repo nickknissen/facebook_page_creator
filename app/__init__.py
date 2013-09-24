@@ -1,5 +1,7 @@
 from flask import Flask, url_for
 from flask.ext.sqlalchemy import SQLAlchemy
+from flask.ext.login import LoginManager
+
 
 # Create Flask application
 app = Flask(__name__)
@@ -15,5 +17,7 @@ app.config.from_object('config')
 db = SQLAlchemy(app)
 
 
+lm = LoginManager()
+lm.init_app(app)
 
 from app import views
