@@ -5,3 +5,4 @@
 .env
 facebook_page_creator.sublime-workspace
 node_modules
+app.db
