@@ -14,6 +14,7 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "~3.0.0"
+    "bootstrap": "~3.0.0",
+    "ckeditor": "https://github.com/eymengunay/ckeditor.git"
   }
 }

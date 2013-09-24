@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="container">
+
+	<div class="row row-offcanvas row-offcanvas-right">
+		<div class="col-xs-2 col-sm-2 sidebar-offcanvas">
+			<div class="well sidebar-nav">
+				<ul class="nav">
+					<li>Sider</li>
+					<li class="active"><a href="#">Side 1</a></li>
+					<li><a href="#">Side 2</a></li>
+					<li><a href="#">Side 3</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-10">
+			<div class="jumbotron">
+				<form role="form">
+					<div class="form-group">
+						<label for="exampleInputEmail1">Facebook Site URL:</label>
+						<input type="facebook-site-url" class="form-control" disabled value="https://evening-tor-8212.herokuapp.com/" />
+					</div>
+					<div class="form-group">
+						<textarea class="ckeditor" name="editor1"></textarea>
+					</div>
+					<button type="submit" class="btn btn-default">Gem</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div> <!-- /container -->
+<script src="{{ static('bower_components/ckeditor/ckeditor.js') }}"></script>
+<script src="{{ static('bower_components/ckeditor/config.js') }}"></script>
+{% endblock %}
