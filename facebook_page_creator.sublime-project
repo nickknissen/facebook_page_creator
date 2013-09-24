@@ -1,0 +1,19 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "/home/nkn/code/facebook_page_creator",
+			"folder_exclude_patterns": ["__pycache__", ".env"]
+		}
+	],
+	 
+	"file_exclude_patterns": [
+	 ".*",
+	 "*.pyc",
+	 "*.pyo"
+	],
+	"trim_automatic_white_space": true,
+	"trim_trailing_white_space_on_save": true,
+ 
+}
