@@ -4,10 +4,10 @@
 {% block body %}
 	<div class="container">
 
-		<form class="form-signin" method="post" name="login">
+		<form class="form-signin" method="post" name="login" action="">
 			{{form.hidden_tag()}}
 			<h2 class="form-signin-heading">Adgangskontrol</h2>
-			{{form.username(size=80, placeholder="Email adresse", class="form-control")}}
+			{{form.email(size=80, placeholder="Email adresse", class="form-control")}}
 			{{form.password(size=80, placeholder="Password", class="form-control")}}
 			<label class="checkbox">
 				{{form.remember_me}} Husk Mig
