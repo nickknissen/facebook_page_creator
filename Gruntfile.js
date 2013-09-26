@@ -10,10 +10,12 @@ module.exports = function( grunt ) {
         watch: {
             scripts: {
                 files: [
-                    'app/templates/*.html',
+                    'app/templates/page/*.html',
+                    'app/templates/*.html'
+
                 ],
                 options: {
-                    livereload: true,
+                    livereload: true
                 }
             }
         }

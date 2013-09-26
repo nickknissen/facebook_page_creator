@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="container">
+	<div class="row row-offcanvas row-offcanvas-right">
+		<div class="col-xs-2 col-sm-2 sidebar-offcanvas">
+		     {% include "page/sidebar.html"  %}
+		</div>
+		<div class="col-xs-12 col-sm-10">
+			<div class="jumbotron">
+                {{ form.title(class="form-control") }}
+                {{ form.body(class="ckeditor") }}
+                <button type="submit" class="btn btn-primary">Gem</button>
+                <a href="/page/{{ content.id }}"><button type="button" class="btn btn-primary">Preview</button></a>
+			</div>
+		</div>
+	</div>
+</div> <!-- /container -->
+<script src="{{ static('bower_components/ckeditor/ckeditor.js') }}"></script>
+<script src="{{ static('bower_components/ckeditor/config.js') }}"></script>
+{% endblock %}

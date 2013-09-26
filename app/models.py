@@ -24,14 +24,17 @@ class User(db.Model):
         return False
 
     def get_id(self):
-        return unicode(self.id)
+        return self.id
 
 
 class Content(db.Model):
     id = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.String())
     body = db.Column(db.String())
     timestamp = db.Column(db.DateTime)
 
-    def __init(self, body):
+    def __init__(self, title, body):
+        self.title = title
         self.body = body
         self.timestamp = datetime.datetime.utcnow()
+

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="container">
+	<div class="row row-offcanvas row-offcanvas-right">
+		<div class="col-xs-2 col-sm-2 sidebar-offcanvas">
+		     {% include "page/sidebar.html"  %}
+		</div>
+		<div class="col-xs-12 col-sm-10">
+			<div class="jumbotron">
+                <p>
+                    <a class="btn btn-lg btn-primary" href="/page/create">Opret Ny side</a>
+                </p>
+			</div>
+		</div>
+	</div>
+</div> <!-- /container -->
+<script src="{{ static('bower_components/ckeditor/ckeditor.js') }}"></script>
+<script src="{{ static('bower_components/ckeditor/config.js') }}"></script>
+{% endblock %}

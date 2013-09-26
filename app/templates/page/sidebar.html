@@ -1,0 +1,15 @@
+
+ 	<div class="well sidebar-nav">
+        <ul class="nav">
+            {% if side_content %}
+            <ul>
+                {% for page in side_content %}
+                    <li><a href="/page/edit/{{ page.id }}">{{ page.title }} </a></li>
+                {% endfor %}
+            </ul>
+            {% else%}
+                <li><a href="/page/create">Der blev ikke fundet nogen sider, klik her for at oprette</a></li>
+            {% endif %}
+
+        </ul>
+	</div>
