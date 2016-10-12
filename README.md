@@ -8,7 +8,8 @@ Components
  * Flask
  * Flask-SQLAlchemy
  * Flask-WTForms
- * Flask-Login
+
+* Flask-Login
 
 
 Installation
@@ -27,3 +28,5 @@ Server
 Running the development server is as easy as:
 
     ./server.py
+
+
