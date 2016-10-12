@@ -8,7 +8,8 @@ Components
  * Flask
  * Flask-SQLAlchemy
  * Flask-WTForms
- * Flask-Login
+
+* Flask-Login
 
 
 Installation
